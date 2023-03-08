@@ -149,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text {
   font-weight: 400;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .mobile-app-card {
@@ -164,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 17px 0 0;
 }
 
-.curcle1-logo {
+.circle1-logo {
   border-radius: 50%;
   border: #E0E0E0 solid 1px;
   width: 110px;
@@ -172,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
 }
 
-.curcle2-logo {
+.circle2-logo {
   border-radius: 50%;
   border: #4985FF solid 1px;
   width: 90px;
