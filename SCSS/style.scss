@@ -33,7 +33,7 @@
 }
 
 .welcome-screen {
-    background: url('../css/Rectangle.jpg') no-repeat;
+    background: url('../img/Rectangle.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -180,8 +180,6 @@
     margin: 0 0 30px;
 }
 
-.standards-link {}
-
 .standards-img {
     width: 500px;
     height: 400px;
@@ -210,4 +208,45 @@
     margin: 0;
 }
 
-.mini-card-text {}
+
+.our-works {
+    padding: 100px 0 85px;
+    background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
+}
+
+
+
+.button-our-works {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.our-works-cards {
+    border-bottom: #E0E0E0 solid 1px;
+    padding: 70px 0 85px;
+}
+
+
+.our-works-card-img {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 0 30px;
+}
+
+.our-works-card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 30px;
+}
+
+.our-works-card-title-first {
+    color: #4985FF;
+}
+
+.our-works-card-text {
+    margin: 0 0 30px;
+}
