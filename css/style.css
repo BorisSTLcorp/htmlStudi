@@ -75,90 +75,109 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: 1115px;
-}
-
-.first-scrin {
-  background: url("../css/Rectangle.jpg") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.header {
-  width: 100%;
-  border-bottom: #afadad solid 1px;
-}
-
-.header-menu {
-  color: #fff;
-  padding: 2% 0 2% 0;
-  font-weight: 500;
-  text-align: center;
-}
-
-.first-scrin-subtitle {
-  color: #fff;
-  text-align: center;
-  font-weight: 500;
-  margin: 15% 0 2% 0;
-}
-
-.first-scrin-title {
-  color: #fff;
-  justify-content: center;
-  text-align: center;
+  max-width: 1110px;
 }
 
 .title {
-  font-weight: 800;
-  font-size: 48px;
-}
-
-.title-small {
-  font-weight: 600;
-}
-
-.first-scrin-button {
-  justify-content: center;
-}
-
-.button {
-  background-color: #4985FF;
-  color: #fff;
-  width: 200px;
-  height: 45px;
-  border-radius: 30px;
-}
-
-.mobile-app {
-  background-color: #fff;
-}
-
-.mobile-app-title {
-  justify-content: center;
-  text-align: center;
-  margin: 10% 0 4% 0;
-}
-
-.mobile-app-text {
-  justify-content: center;
-  text-align: center;
-  margin: 0 0 5% 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
 }
 
 .text {
   font-weight: 400;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #999999;
+}
+
+.button {
+  background-color: #4985FF;
+  color: #fff;
+  padding: 13px 36px 15px;
+  border-radius: 30px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.welcome-screen {
+  background: url("../css/Rectangle.jpg") no-repeat;
+  background-size: cover;
+}
+
+.header {
+  border-bottom: #afadad solid 1px;
+}
+
+.header-menu {
+  padding: 40px 0 30px 0;
+  display: flex;
+  justify-content: end;
+}
+
+.list-link {
+  margin: 0 40px 0 0;
+}
+.list-link:last-child {
+  margin: 0;
+}
+
+.header-link {
+  color: #fff;
+  line-height: 19.5px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.welcome-screen-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 220px 0 335px;
+}
+
+.welcome-screen-text {
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin: 0 0 20px;
+}
+
+.welcome-screen-title {
+  color: #fff;
+  text-align: center;
+  margin: 0 0 50px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  padding: 0 50px;
+}
+
+.mobile-app {
+  background-color: #fff;
+  justify-content: center;
+  text-align: center;
+  padding: 110px 0 105px;
+}
+
+.mobile-app-title {
+  margin: 0 0 50px;
+  padding: 0 160px;
+}
+
+.mobile-app-text {
+  margin: 0 0 70px;
+  padding: 0 180px;
 }
 
 .mobile-app-card {
-  margin: 0 0 4% 0;
+  margin: 0 0 55px;
 }
 
 .item-card {
   display: flex;
   align-items: baseline;
+  text-align: left;
 }
 
 .card-logo {
@@ -183,28 +202,45 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.mobile-app-button {
-  justify-content: center;
-  margin: 0 0 10% 0;
+.card-info {
+  margin: 0 0 12px;
 }
 
-.standarts {
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.standards {
   background-color: #ebebeb;
+  padding: 100px 0 70px;
 }
 
-.standarts-info {
+.standards-info {
   border-bottom: #afadad solid 1px;
+  padding: 0 0 90px;
 }
 
-.standarts-title {
-  margin: 25% 0 7% 0;
+.standards-article {
+  padding: 52px 105px 0 0;
 }
 
-.standarts-text {
-  max-width: 500px;
-  margin: 0 0 7% 0;
+.standards-title {
+  margin: 0 0 40px;
 }
 
-.standarts-img {
-  margin: 10% 0 10% 0;
+.standards-text {
+  margin: 0 0 30px;
+}
+
+.standards-img {
+  width: 500px;
+  height: 400px;
 }
