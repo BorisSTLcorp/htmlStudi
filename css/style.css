@@ -252,9 +252,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 30px;
 }
 
-.standards-img {
-  width: 500px;
-  height: 400px;
+.standards-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .standards-links {
@@ -302,6 +303,12 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   margin: 0 0 30px;
 }
+.our-works-card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .our-works-card-title {
   font-weight: 600;
@@ -347,7 +354,6 @@ h1, h2, h3, h4, h5, h6 {
 .our-video {
   padding: 70px 0 0;
   background: url("../img/Rectangle.jpg") no-repeat;
-  background: linear-gradient(180deg, url("../img/Rectangle.jpg") no-repeat 50%, #FFF 50%);
   background-size: cover;
   max-height: 570px;
 }
