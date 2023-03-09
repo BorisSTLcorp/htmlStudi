@@ -207,6 +207,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .circle2-logo {
+  background-image: url("../img/project.png");
+  background-repeat: no-repeat;
+  background-size: 37px 40px;
+  background-position: center center;
   border-radius: 50%;
   border: #4985FF solid 1px;
   width: 90px;
@@ -461,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   content: url("../img/envelope.png");
   width: 15px;
   height: 13px;
-  padding: 0 5px 0 0;
+  padding: 30px 5px 0 0;
 }
 
 .phone ::before {
