@@ -14,6 +14,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 52px;
+    color: #FFF;
 }
 
 .text {
@@ -63,9 +64,6 @@
 }
 
 .welcome-screen-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 220px 0 335px;
 }
 
@@ -73,16 +71,29 @@
     color: #fff;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     margin: 0 0 20px;
+    display: flex;
+    justify-content: center;
+
+    & .text {
+        color: #FFF;
+    }
 }
 
 .welcome-screen-title {
-    color: #fff;
     text-align: center;
     margin: 0 0 50px;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 64px;
-    padding: 0 50px;
+
+    & .title {
+        color: #fff;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 64px;
+    }
+}
+
+.welcome-screen-button {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -96,13 +107,16 @@
 
 .mobile-app-title {
     margin: 0 0 50px;
-    padding: 0 160px;
+
+    & .title {
+        color: #000;
+    }
 }
 
 
 .mobile-app-text {
     margin: 0 0 70px;
-    padding: 0 180px;
+
 }
 
 
@@ -147,6 +161,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
+    color: #000;
 
 }
 
@@ -174,6 +189,7 @@
 
 .standards-title {
     margin: 0 0 40px;
+    color: #000;
 }
 
 .standards-text {
@@ -260,6 +276,10 @@
     display: flex;
     justify-content: center;
     margin: 0 0 50px;
+
+    & h2 {
+        color: #000;
+    }
 }
 
 .our-projects-text {
@@ -276,6 +296,10 @@
 
 .our-video {
     padding: 70px 0 85px;
+    background: url('../img/Rectangle.jpg') no-repeat;
+    background: linear-gradient(180deg, url('../img/Rectangle.jpg') no-repeat 50%, #FFF 50%);
+    background-size: cover;
+
 }
 
 .video-title {
@@ -288,16 +312,129 @@
     margin: 0 0 70px;
     display: flex;
     justify-content: center;
+
+    & p {
+        color: #FFF;
+    }
 }
 
+.video-board {
+    width: 970px;
+    height: 430px;
+}
 
 
 .form-title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px;
+
+
+    & h3 {
+        color: #000;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
-.form-text {}
+.form-text {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px;
 
-.form-input {}
+    & .text-under-button {
+        font-size: 13px;
+        line-height: 21px;
+    }
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 35px;
+
+    & form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    & input {
+        padding: 13px 36px 15px;
+        border-radius: 30px 0 0 30px;
+        width: 100%;
+    }
+}
+
+.button-form {
+    border-radius: 0 30px 30px 0;
+}
+
+.footer {
+    background-color: #ebebeb;
+    padding: 70px 0 30px;
+}
+
+
+.footer-card {
+    & .title {
+        color: #000;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 35px;
+    }
+
+    & li {
+        margin: 0 0 30px;
+    }
+
+    & a {
+        color: #999999;
+
+    }
+
+
+
+}
+
+.mail {
+    & ::before {
+        content: url('../img/envelope.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
+
+.phone {
+    & ::before {
+        content: url('../img/Group.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
+
+.address {
+    & ::before {
+        content: url('../img/placeholder.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
+
+.footer-link {
+    & ::before {
+        content: url('../img/arrow.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
+
+.copyright {
+    margin: 30px 0 0;
+}
