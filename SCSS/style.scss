@@ -1,5 +1,9 @@
 @import 'nullstyle';
 
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
 .wrapper {
     width: 100%;
     height: 100%;
@@ -10,7 +14,6 @@
 }
 
 .title {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 52px;
@@ -19,7 +22,6 @@
 
 .text {
     font-weight: 400;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 19.5px;
     color: #999999;
@@ -30,7 +32,6 @@
     color: #fff;
     padding: 13px 36px 15px;
     border-radius: 30px;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 .welcome-screen {
