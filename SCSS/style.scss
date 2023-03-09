@@ -320,8 +320,8 @@
 }
 
 .video-board {
-    width: 970px;
-    height: 430px;
+    display: flex;
+    justify-content: center;
 }
 
 .subscribe {

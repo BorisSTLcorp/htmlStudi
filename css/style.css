@@ -368,8 +368,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .video-board {
-  width: 970px;
-  height: 430px;
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe {
