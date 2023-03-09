@@ -345,10 +345,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .our-video {
-  padding: 70px 0 85px;
+  padding: 70px 0 0;
   background: url("../img/Rectangle.jpg") no-repeat;
   background: linear-gradient(180deg, url("../img/Rectangle.jpg") no-repeat 50%, #FFF 50%);
   background-size: cover;
+  max-height: 570px;
 }
 
 .video-title {
@@ -371,45 +372,58 @@ h1, h2, h3, h4, h5, h6 {
   height: 430px;
 }
 
-.form-title {
+.subscribe {
+  padding: 165px 0 85px;
+}
+
+.subscribe-title {
   display: flex;
   justify-content: center;
-  margin: 0 0 30px;
+  margin: 85px 0 20px;
 }
-.form-title h3 {
+.subscribe-title h3 {
   color: #000;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
 }
 
-.form-text {
+.subscribe-text {
   display: flex;
   justify-content: center;
   margin: 0 0 30px;
 }
-.form-text .text-under-button {
-  font-size: 13px;
-  line-height: 21px;
+
+.subscribe-text-under-button {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
-.form-input {
+.text-under-button {
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.subscribe-input {
   display: flex;
   justify-content: center;
   margin: 0 0 35px;
 }
-.form-input form {
+.subscribe-input form {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-.form-input input {
+.subscribe-input input {
   padding: 13px 36px 15px;
   border-radius: 30px 0 0 30px;
   width: 100%;
+  border: #dfdede solid 1px;
 }
 
-.button-form {
+.button-subscribe {
   border-radius: 0 30px 30px 0;
 }
 
