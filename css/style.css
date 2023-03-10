@@ -276,6 +276,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mini-card-img {
+  background-image: url("../img/web-programming.png");
+  background-repeat: no-repeat;
+  background-size: 30px 27px;
+  background-position: center center;
   width: 30px;
   height: 26px;
   margin: 0 20px 0 0;
