@@ -1,85 +1,117 @@
+@charset "UTF-8";
+/***
+    The new CSS reset - version 1.8.4 (last updated 14.2.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+
 * {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-* {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-}
-
 .wrapper {
   width: 100%;
   height: 100%;
-}
-
-.container {
-  max-width: 1110px;
 }
 
 .title {
@@ -88,12 +120,54 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 52px;
   color: #FFF;
 }
+.title-welcome-screen {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  margin: 0 0 50px;
+}
+.title-mobile-app {
+  margin: 0 0 50px;
+  color: #000;
+}
+.title-card {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+.title-standards {
+  margin: 0 0 40px;
+  color: #000;
+}
+.title-our-works {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
 
 .text {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.5px;
   color: #999999;
+}
+.text-welcome-screen {
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin: 0 0 20px;
+}
+.text-card {
+  font-size: 14px;
+  line-height: 22px;
+}
+.text-mini-card {
+  font-size: 36px;
+  line-height: 53px;
+  margin: 0;
+  color: #000;
 }
 
 .button {
@@ -103,13 +177,17 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 30px;
 }
 
+.color-blue {
+  color: #4985FF;
+}
+
 .welcome-screen {
   background: url("../img/Rectangle.jpg") no-repeat;
   background-size: cover;
 }
 
 .header {
-  border-bottom: #afadad solid 1px;
+  border-bottom: #ebebeb solid 1px;
 }
 
 .header-menu {
@@ -136,68 +214,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 220px 0 335px;
 }
 
-.welcome-screen-text {
-  color: #fff;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  margin: 0 0 20px;
-  display: flex;
-  justify-content: center;
-}
-.welcome-screen-text .text {
-  color: #FFF;
-}
-
-.welcome-screen-title {
-  text-align: center;
-  margin: 0 0 50px;
-}
-.welcome-screen-title .title {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 64px;
-}
-
-.welcome-screen-button {
-  display: flex;
-  justify-content: center;
-}
-
 .mobile-app {
   background-color: #fff;
-  justify-content: center;
-  text-align: center;
   padding: 110px 0 105px;
 }
 
-.mobile-app-title {
-  margin: 0 0 50px;
-}
-.mobile-app-title .title {
-  color: #000;
-}
-
-.mobile-app-text {
-  margin: 0 0 70px;
-}
-
-.mobile-app-card {
-  margin: 0 0 55px;
-}
-
-.item-card {
-  display: flex;
-  align-items: baseline;
-  text-align: left;
-}
-
-.card-logo {
-  margin: 0 17px 0 0;
-}
-
-.circle1-logo {
+.external-circle {
   border-radius: 50%;
-  border: #E0E0E0 solid 1px;
+  border: #ebebeb solid 1px;
   width: 110px;
   height: 110px;
   padding: 10px;
@@ -206,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.circle2-logo {
+.inner-circle {
   background-image: url("../img/project.png");
   background-repeat: no-repeat;
   background-size: 37px 40px;
@@ -220,59 +244,15 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.card-info {
-  margin: 0 0 12px;
-}
-
-.card-title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000;
-}
-
-.card-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-}
-
 .standards {
   background-color: #ebebeb;
   padding: 100px 0 70px;
 }
 
-.standards-info {
-  border-bottom: #afadad solid 1px;
-  padding: 0 0 90px;
-}
-
-.standards-article {
-  padding: 52px 105px 0 0;
-}
-
-.standards-title {
-  margin: 0 0 40px;
-  color: #000;
-}
-
-.standards-text {
-  margin: 0 0 30px;
-}
-
-.standards-img img {
+.standards-img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-}
-
-.standards-links {
-  padding: 70px 0 0 0;
-}
-
-.mini-card {
-  display: flex;
-  align-items: center;
 }
 
 .mini-card-img {
@@ -285,57 +265,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 20px 0 0;
 }
 
-.mini-card-title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 53px;
-  margin: 0;
-}
-
 .our-works {
   padding: 100px 0 85px;
   background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
 }
 
-.button-our-works {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.our-works-cards {
-  border-bottom: #E0E0E0 solid 1px;
-  padding: 70px 0 85px;
-}
-
-.our-works-card-img {
+.our-works-card {
   width: 350px;
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 0 30px;
 }
-.our-works-card-img img {
+
+.our-works-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.our-works-card-title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  margin: 0 0 30px;
-  color: #000;
-}
-
-.our-works-card-title-first {
-  color: #4985FF;
-}
-
-.our-works-card-text {
-  margin: 0 0 30px;
 }
 
 .our-projects {
