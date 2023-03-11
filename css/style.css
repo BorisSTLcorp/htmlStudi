@@ -109,64 +109,52 @@ meter {
   border: 0;
 }
 
-@media screen and (min-width: 1200px) {
-  iframe {
-    width: 970px;
-    height: 430px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  iframe {
-    width: 900px;
-    height: 390px;
-  }
-}
 .wrapper {
   width: 100%;
   height: 100%;
 }
 
 .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 52px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
   color: #000;
 }
 .title-welcome-screen {
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 64px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 42px;
   color: #FFF;
 }
 .title-small {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .text {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19.5px;
+  font-size: 14px;
+  line-height: 16px;
   color: #999999;
 }
 .text-welcome-screen {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  margin: 0 0 20px;
+  margin: 0 0 14px;
 }
 .text-card {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 18px;
 }
 .text-mini-card {
-  font-size: 36px;
-  line-height: 53px;
+  font-size: 26px;
+  line-height: 43px;
   margin: 0;
   color: #000;
 }
 .text-small {
-  font-size: 13px;
-  line-height: 21px;
+  font-size: 11px;
+  line-height: 18px;
 }
 
 .button {
@@ -174,17 +162,6 @@ meter {
   color: #fff;
   padding: 13px 46px 15px;
   border-radius: 30px;
-}
-.button-subscribe {
-  border-radius: 0 30px 30px 0;
-}
-
-.color-blue {
-  color: #4985FF;
-}
-
-.color-white {
-  color: #fff;
 }
 
 .welcome-screen {
@@ -217,11 +194,11 @@ meter {
 }
 
 .welcome-screen-content {
-  padding: 220px 0 335px;
+  padding: 100px 0 150px;
 }
 
 .mobile-app {
-  padding: 110px 0 105px;
+  padding: 50px 0 45px;
 }
 
 .external-circle {
@@ -251,7 +228,7 @@ meter {
 
 .standards {
   background-color: #F6F6F8;
-  padding: 100px 0 70px;
+  padding: 50px 0 35px;
 }
 
 .standards-img {
@@ -271,7 +248,7 @@ meter {
 }
 
 .our-works {
-  padding: 100px 0 85px;
+  padding: 50px 0 35px;
   background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
 }
 
@@ -292,7 +269,7 @@ meter {
 
 .our-projects {
   background-color: #ebebeb;
-  padding: 100px 0 130px;
+  padding: 50px 0 60px;
 }
 
 .our-projects-img {
@@ -303,14 +280,14 @@ meter {
 }
 
 .our-video {
-  padding: 70px 0 0;
+  padding: 30px 0 0;
   background: url("../img/Rectangle.jpg") no-repeat;
   background-size: cover;
-  max-height: 570px;
+  max-height: 370px;
 }
 
 .subscribe {
-  padding: 165px 0 85px;
+  padding: 100px 0 45px;
 }
 
 .subscribe-form {
@@ -319,14 +296,15 @@ meter {
 
 .subscribe-input {
   padding: 13px 36px 15px;
-  border-radius: 30px 0 0 30px;
+  border-radius: 30px;
   width: 100%;
   border: #dfdede solid 1px;
+  margin: 0 0 20px;
 }
 
 .footer {
   background-color: #F6F6F8;
-  padding: 70px 0 30px;
+  padding: 30px 0 15px;
 }
 
 .footer-card-link {
@@ -337,7 +315,7 @@ meter {
   content: url("../img/envelope.png");
   width: 15px;
   height: 13px;
-  padding: 30px 5px 0 0;
+  padding: 5px 5px 0 0;
 }
 
 .phone ::before {
@@ -359,4 +337,107 @@ meter {
   width: 15px;
   height: 13px;
   padding: 0 5px 0 0;
+}
+
+@media screen and (min-width: 576px) {
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: #000;
+  }
+  .title-welcome-screen {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 64px;
+    color: #FFF;
+  }
+  .title-small {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #999999;
+  }
+  .text-welcome-screen {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0 0 20px;
+  }
+  .text-card {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text-mini-card {
+    font-size: 36px;
+    line-height: 53px;
+    margin: 0;
+    color: #000;
+  }
+  .text-small {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .button {
+    background-color: #4985FF;
+    color: #fff;
+    padding: 13px 46px 15px;
+    border-radius: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-subscribe {
+    border-radius: 0 30px 30px 0;
+  }
+  .subscribe-input {
+    border-radius: 30px 0 0 30px;
+    margin: 0;
+  }
+  .welcome-screen-content {
+    padding: 220px 0 335px;
+  }
+  .mobile-app {
+    padding: 110px 0 105px;
+  }
+  .standards {
+    padding: 100px 0 70px;
+  }
+  .our-works {
+    padding: 100px 0 85px;
+  }
+  .our-projects {
+    padding: 100px 0 130px;
+  }
+  .our-video {
+    padding: 70px 0 0;
+    max-height: 570px;
+  }
+  .subscribe {
+    padding: 165px 0 85px;
+  }
+  .footer {
+    padding: 70px 0 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  iframe {
+    width: 900px;
+    height: 390px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  iframe {
+    width: 970px;
+    height: 430px;
+  }
+}
+.color-blue {
+  color: #4985FF;
+}
+
+.color-white {
+  color: #fff;
 }
