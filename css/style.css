@@ -170,6 +170,9 @@ meter {
   margin: 0;
   color: #000;
 }
+.text-video {
+  color: #fff;
+}
 
 .button {
   background-color: #4985FF;
@@ -303,26 +306,6 @@ meter {
   background: url("../img/Rectangle.jpg") no-repeat;
   background-size: cover;
   max-height: 570px;
-}
-
-.video-title {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 50px;
-}
-
-.video-text {
-  margin: 0 0 70px;
-  display: flex;
-  justify-content: center;
-}
-.video-text p {
-  color: #FFF;
-}
-
-.video-board {
-  display: flex;
-  justify-content: center;
 }
 
 .subscribe {

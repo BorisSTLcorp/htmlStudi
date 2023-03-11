@@ -78,6 +78,10 @@
         margin: 0;
         color: #000;
     }
+
+    &-video {
+        color: #fff;
+    }
 }
 
 .button {
@@ -199,6 +203,7 @@
 }
 
 
+
 .our-projects {
     background-color: #ebebeb;
     padding: 100px 0 130px;
@@ -211,6 +216,8 @@
     overflow: hidden;
 }
 
+
+
 .our-video {
     padding: 70px 0 0;
     background: url('../img/Rectangle.jpg') no-repeat;
@@ -218,26 +225,7 @@
     max-height: 570px;
 }
 
-.video-title {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 50px;
-}
 
-.video-text {
-    margin: 0 0 70px;
-    display: flex;
-    justify-content: center;
-
-    & p {
-        color: #FFF;
-    }
-}
-
-.video-board {
-    display: flex;
-    justify-content: center;
-}
 
 .subscribe {
     padding: 165px 0 85px;
