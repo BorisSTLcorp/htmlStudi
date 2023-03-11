@@ -121,11 +121,9 @@ meter {
   color: #FFF;
 }
 .title-welcome-screen {
-  color: #fff;
   font-size: 48px;
   font-weight: 800;
   line-height: 64px;
-  margin: 0 0 50px;
 }
 .title-mobile-app {
   margin: 0 0 50px;
@@ -145,6 +143,9 @@ meter {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  color: #000;
+}
+.title-our-projects {
   color: #000;
 }
 
@@ -290,25 +291,11 @@ meter {
   padding: 100px 0 130px;
 }
 
-.our-projects-title {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 50px;
-}
-.our-projects-title h2 {
-  color: #000;
-}
-
-.our-projects-text {
-  margin: 0 0 70px;
-}
-
 .our-projects-img {
   width: 255px;
   height: 255px;
   border-radius: 10px;
   overflow: hidden;
-  margin: 0 0 50px;
 }
 
 .our-video {
