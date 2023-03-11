@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/***
+    The new CSS reset - version 1.8.4 (last updated 14.2.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+
+* {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  color: #000;
+}
+.title-welcome-screen {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  color: #FFF;
+}
+.title-small {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #999999;
+}
+.text-welcome-screen {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin: 0 0 20px;
+}
+.text-card {
+  font-size: 14px;
+  line-height: 22px;
+}
+.text-mini-card {
+  font-size: 36px;
+  line-height: 53px;
+  margin: 0;
+  color: #000;
+}
+.text-small {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.button {
+  background-color: #4985FF;
+  color: #fff;
+  padding: 13px 46px 15px;
+  border-radius: 30px;
+}
+.button-subscribe {
+  border-radius: 0 30px 30px 0;
+}
+
+.color-blue {
+  color: #4985FF;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.welcome-screen {
+  background: url("../img/Rectangle.jpg") no-repeat;
+  background-size: cover;
+}
+
+.header {
+  border-bottom: #F6F6F8 solid 1px;
+}
+
+.header-menu {
+  padding: 40px 0 30px 0;
+  display: flex;
+  justify-content: end;
+}
+
+.list-link {
+  margin: 0 40px 0 0;
+}
+.list-link:last-child {
+  margin: 0;
+}
+
+.header-link {
+  color: #fff;
+  line-height: 19.5px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.welcome-screen-content {
+  padding: 220px 0 335px;
+}
+
+.mobile-app {
+  padding: 110px 0 105px;
+}
+
+.external-circle {
+  border-radius: 50%;
+  border: #999999 solid 1px;
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  background-image: url("../img/project.png");
+  background-repeat: no-repeat;
+  background-size: 37px 40px;
+  background-position: center center;
+  border-radius: 50%;
+  border: #4985FF solid 1px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.standards {
+  background-color: #F6F6F8;
+  padding: 100px 0 70px;
+}
+
+.standards-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.mini-card-img {
+  background-image: url("../img/web-programming.png");
+  background-repeat: no-repeat;
+  background-size: 30px 27px;
+  background-position: center center;
+  width: 30px;
+  height: 26px;
+  margin: 0 20px 0 0;
+}
+
+.our-works {
+  padding: 100px 0 85px;
+  background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
+}
+
+.our-works-card {
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+
+.our-works-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.our-projects {
+  background-color: #ebebeb;
+  padding: 100px 0 130px;
+}
+
+.our-projects-img {
+  width: 255px;
+  height: 255px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.our-video {
+  padding: 70px 0 0;
+  background: url("../img/Rectangle.jpg") no-repeat;
+  background-size: cover;
+  max-height: 570px;
+}
+
+.subscribe {
+  padding: 165px 0 85px;
+}
+
+.subscribe-form {
+  width: 100%;
+}
+
+.subscribe-input {
+  padding: 13px 36px 15px;
+  border-radius: 30px 0 0 30px;
+  width: 100%;
+  border: #dfdede solid 1px;
+}
+
+.footer {
+  background-color: #F6F6F8;
+  padding: 70px 0 30px;
+}
+
+.footer-card-link {
+  color: #999999;
+}
+
+.mail ::before {
+  content: url("../img/envelope.png");
+  width: 15px;
+  height: 13px;
+  padding: 30px 5px 0 0;
+}
+
+.phone ::before {
+  content: url("../img/Group.png");
+  width: 15px;
+  height: 13px;
+  padding: 0 5px 0 0;
+}
+
+.address ::before {
+  content: url("../img/placeholder.png");
+  width: 15px;
+  height: 13px;
+  padding: 0 5px 0 0;
+}
+
+.footer-link ::before {
+  content: url("../img/arrow.png");
+  width: 15px;
+  height: 13px;
+  padding: 0 5px 0 0;
+}

@@ -1,0 +1,276 @@
+@import 'reset';
+@import 'variables';
+
+
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: #000;
+
+    &-welcome-screen {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 64px;
+        color: #FFF;
+    }
+
+    &-small {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: $our-grey;
+
+    &-welcome-screen {
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        margin: 0 0 20px;
+    }
+
+    &-card {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &-mini-card {
+        font-size: 36px;
+        line-height: 53px;
+        margin: 0;
+        color: #000;
+    }
+
+    &-small {
+        font-size: 13px;
+        line-height: 21px;
+    }
+}
+
+.button {
+    background-color: $our-blue;
+    color: #fff;
+    padding: 13px 46px 15px;
+    border-radius: 30px;
+
+    &-subscribe {
+        border-radius: 0 30px 30px 0;
+    }
+}
+
+.color-blue {
+    color: #4985FF;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.welcome-screen {
+    background: url('../img/Rectangle.jpg') no-repeat;
+    background-size: cover;
+}
+
+.header {
+    border-bottom: $background-grey solid 1px;
+}
+
+.header-menu {
+    padding: 40px 0 30px 0;
+    display: flex;
+    justify-content: end;
+}
+
+.list-link {
+    margin: 0 40px 0 0;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.header-link {
+    color: #fff;
+    line-height: 19.5px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.welcome-screen-content {
+    padding: 220px 0 335px;
+}
+
+.mobile-app {
+    padding: 110px 0 105px;
+}
+
+.external-circle {
+    border-radius: 50%;
+    border: $our-grey solid 1px;
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inner-circle {
+    background-image: url('../img/project.png');
+    background-repeat: no-repeat;
+    background-size: 37px 40px;
+    background-position: center center;
+    border-radius: 50%;
+    border: $our-blue solid 1px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.standards {
+    background-color: $background-grey;
+    padding: 100px 0 70px;
+}
+
+.standards-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.mini-card-img {
+    background-image: url('../img/web-programming.png');
+    background-repeat: no-repeat;
+    background-size: 30px 27px;
+    background-position: center center;
+    width: 30px;
+    height: 26px;
+    margin: 0 20px 0 0;
+}
+
+.our-works {
+    padding: 100px 0 85px;
+    background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
+}
+
+
+.our-works-card {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 0 30px;
+}
+
+.our-works-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.our-projects {
+    background-color: #ebebeb;
+    padding: 100px 0 130px;
+}
+
+.our-projects-img {
+    width: 255px;
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.our-video {
+    padding: 70px 0 0;
+    background: url('../img/Rectangle.jpg') no-repeat;
+    background-size: cover;
+    max-height: 570px;
+}
+
+
+
+
+.subscribe {
+    padding: 165px 0 85px;
+}
+
+.subscribe-form {
+    width: 100%;
+}
+
+.subscribe-input {
+    padding: 13px 36px 15px;
+    border-radius: 30px 0 0 30px;
+    width: 100%;
+    border: #dfdede solid 1px;
+}
+
+.footer {
+    background-color: $background-grey;
+    padding: 70px 0 30px;
+}
+
+
+.footer-card-link {
+    color: $our-grey
+}
+
+.mail {
+    & ::before {
+        content: url('../img/envelope.png');
+        width: 15px;
+        height: 13px;
+        padding: 30px 5px 0 0;
+    }
+}
+
+.phone {
+    & ::before {
+        content: url('../img/Group.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
+
+.address {
+    & ::before {
+        content: url('../img/placeholder.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
+
+.footer-link {
+    & ::before {
+        content: url('../img/arrow.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
