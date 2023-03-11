@@ -118,35 +118,18 @@ meter {
   font-weight: 700;
   font-size: 36px;
   line-height: 52px;
-  color: #FFF;
+  color: #000;
 }
 .title-welcome-screen {
   font-size: 48px;
   font-weight: 800;
   line-height: 64px;
+  color: #FFF;
 }
-.title-mobile-app {
-  margin: 0 0 50px;
-  color: #000;
-}
-.title-card {
+.title-small {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #000;
-}
-.title-standards {
-  margin: 0 0 40px;
-  color: #000;
-}
-.title-our-works {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000;
-}
-.title-our-projects {
-  color: #000;
 }
 
 .text {
@@ -156,7 +139,6 @@ meter {
   color: #999999;
 }
 .text-welcome-screen {
-  color: #fff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin: 0 0 20px;
 }
@@ -170,8 +152,9 @@ meter {
   margin: 0;
   color: #000;
 }
-.text-video {
-  color: #fff;
+.text-small {
+  font-size: 13px;
+  line-height: 21px;
 }
 
 .button {
@@ -180,9 +163,16 @@ meter {
   padding: 13px 46px 15px;
   border-radius: 30px;
 }
+.button-subscribe {
+  border-radius: 0 30px 30px 0;
+}
 
 .color-blue {
   color: #4985FF;
+}
+
+.color-white {
+  color: #fff;
 }
 
 .welcome-screen {
@@ -312,55 +302,15 @@ meter {
   padding: 165px 0 85px;
 }
 
-.subscribe-title {
-  display: flex;
-  justify-content: center;
-  margin: 85px 0 20px;
-}
-.subscribe-title h3 {
-  color: #000;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.subscribe-text {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 30px;
-}
-
-.subscribe-text-under-button {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-.text-under-button {
-  font-size: 13px;
-  line-height: 21px;
-  margin: 0;
+.subscribe-form {
+  width: 100%;
 }
 
 .subscribe-input {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 35px;
-}
-.subscribe-input form {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.subscribe-input input {
   padding: 13px 36px 15px;
   border-radius: 30px 0 0 30px;
   width: 100%;
   border: #dfdede solid 1px;
-}
-
-.button-subscribe {
-  border-radius: 0 30px 30px 0;
 }
 
 .footer {
