@@ -76,29 +76,15 @@
     background-size: cover;
 }
 
+
 .header {
     border-bottom: $background-grey solid 1px;
 }
 
-.header-menu {
-    padding: 40px 0 30px 0;
-    display: flex;
-    justify-content: end;
-}
 
-.list-link {
-    margin: 0 40px 0 0;
 
-    &:last-child {
-        margin: 0;
-    }
-}
 
-.header-link {
-    color: $white;
-    line-height: 19.5px;
-    font-size: 16px;
-}
+
 
 .welcome-screen-content {
     padding-top: 100px;
@@ -393,6 +379,14 @@
 
     .our-video {
         max-height: 570px;
+    }
+
+    .nav-item {
+        border-bottom: transparent solid 2px;
+
+        &:hover {
+            border-bottom: $white solid 2px;
+        }
     }
 }
 
