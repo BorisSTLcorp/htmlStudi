@@ -88,7 +88,7 @@
 
 .welcome-screen-content {
     padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 .mobile-app {
@@ -187,7 +187,7 @@
     padding-top: 30px;
     background: url('../img/Rectangle.jpg') no-repeat;
     background-size: cover;
-    max-height: 370px;
+    max-height: 340px;
 }
 
 
@@ -256,8 +256,6 @@
         padding: 0 5px 0 0;
     }
 }
-
-
 
 
 
@@ -394,6 +392,12 @@
     iframe {
         width: 970px;
         height: 430px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .color-contrast {
+        color: $white;
     }
 }
 
