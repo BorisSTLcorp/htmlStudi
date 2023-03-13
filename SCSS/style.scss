@@ -18,13 +18,13 @@
     font-weight: 600;
     font-size: 26px;
     line-height: 36px;
-    color: #000;
+    color: $black;
 
     &-welcome-screen {
         font-size: 34px;
         font-weight: 700;
         line-height: 42px;
-        color: #FFF;
+        color: $white;
     }
 
     &-small {
@@ -41,7 +41,7 @@
     color: $our-grey;
 
     &-welcome-screen {
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
         margin: 0 0 14px;
     }
 
@@ -54,7 +54,7 @@
         font-size: 26px;
         line-height: 43px;
         margin: 0;
-        color: #000;
+        color: $black;
     }
 
     &-small {
@@ -65,7 +65,7 @@
 
 .button {
     background-color: $our-blue;
-    color: #fff;
+    color: $white;
     padding: 13px 46px 15px;
     border-radius: 30px;
 }
@@ -95,9 +95,8 @@
 }
 
 .header-link {
-    color: #fff;
+    color: $white;
     line-height: 19.5px;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
@@ -180,7 +179,7 @@
 
 
 .our-projects {
-    background-color: #ebebeb;
+    background-color: $background-grey;
     padding: 50px 0 60px;
 }
 
@@ -215,7 +214,7 @@
     padding: 13px 36px 15px;
     border-radius: 30px;
     width: 100%;
-    border: #dfdede solid 1px;
+    border: $our-grey solid 1px;
     margin: 0 0 20px;
 }
 

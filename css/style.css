@@ -139,7 +139,7 @@ meter {
   color: #999999;
 }
 .text-welcome-screen {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   margin: 0 0 14px;
 }
 .text-card {
@@ -159,7 +159,7 @@ meter {
 
 .button {
   background-color: #4985FF;
-  color: #fff;
+  color: #FFF;
   padding: 13px 46px 15px;
   border-radius: 30px;
 }
@@ -187,9 +187,8 @@ meter {
 }
 
 .header-link {
-  color: #fff;
+  color: #FFF;
   line-height: 19.5px;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -268,7 +267,7 @@ meter {
 }
 
 .our-projects {
-  background-color: #ebebeb;
+  background-color: #F6F6F8;
   padding: 50px 0 60px;
 }
 
@@ -298,7 +297,7 @@ meter {
   padding: 13px 36px 15px;
   border-radius: 30px;
   width: 100%;
-  border: #dfdede solid 1px;
+  border: #999999 solid 1px;
   margin: 0 0 20px;
 }
 
