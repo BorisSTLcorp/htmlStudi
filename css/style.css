@@ -140,7 +140,7 @@ meter {
 }
 .text-welcome-screen {
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  margin: 0 0 14px;
+  margin-bottom: 14px;
 }
 .text-card {
   font-size: 12px;
@@ -149,8 +149,8 @@ meter {
 .text-mini-card {
   font-size: 26px;
   line-height: 43px;
-  margin: 0;
   color: #000;
+  margin: 0;
 }
 .text-small {
   font-size: 11px;
@@ -193,11 +193,13 @@ meter {
 }
 
 .welcome-screen-content {
-  padding: 100px 0 150px;
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
 
 .mobile-app {
-  padding: 50px 0 45px;
+  padding-top: 50px;
+  padding-bottom: 45px;
 }
 
 .external-circle {
@@ -227,7 +229,8 @@ meter {
 
 .standards {
   background-color: #F6F6F8;
-  padding: 50px 0 35px;
+  padding-top: 50px;
+  padding-bottom: 35px;
 }
 
 .standards-img {
@@ -247,7 +250,8 @@ meter {
 }
 
 .our-works {
-  padding: 50px 0 35px;
+  padding-top: 50px;
+  padding-bottom: 35px;
   background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
 }
 
@@ -256,7 +260,7 @@ meter {
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
-  margin: 0 0 30px;
+  margin-bottom: 30px;
 }
 
 .our-works-img {
@@ -268,25 +272,27 @@ meter {
 
 .our-projects {
   background-color: #F6F6F8;
-  padding: 50px 0 60px;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .our-projects-img {
-  width: 255px;
-  height: 255px;
+  max-width: 255px;
+  max-height: 255px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .our-video {
-  padding: 30px 0 0;
+  padding-top: 30px;
   background: url("../img/Rectangle.jpg") no-repeat;
   background-size: cover;
   max-height: 370px;
 }
 
 .subscribe {
-  padding: 100px 0 45px;
+  padding-top: 100px;
+  padding-bottom: 45px;
 }
 
 .subscribe-form {
@@ -298,12 +304,13 @@ meter {
   border-radius: 30px;
   width: 100%;
   border: #999999 solid 1px;
-  margin: 0 0 20px;
+  margin-bottom: 20px;
 }
 
 .footer {
   background-color: #F6F6F8;
-  padding: 30px 0 15px;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .footer-card-link {
@@ -363,7 +370,7 @@ meter {
     color: #999999;
   }
   .text-welcome-screen {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     margin: 0 0 20px;
   }
   .text-card {
@@ -382,7 +389,7 @@ meter {
   }
   .button {
     background-color: #4985FF;
-    color: #fff;
+    color: #FFF;
     padding: 13px 46px 15px;
     border-radius: 30px;
   }
@@ -396,35 +403,44 @@ meter {
     margin: 0;
   }
   .welcome-screen-content {
-    padding: 220px 0 335px;
+    padding-top: 220px;
+    padding-bottom: 335px;
   }
   .mobile-app {
-    padding: 110px 0 105px;
+    padding-top: 110px;
+    padding-bottom: 105px;
   }
   .standards {
-    padding: 100px 0 70px;
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
   .our-works {
-    padding: 100px 0 85px;
+    padding-top: 100px;
+    padding-bottom: 85px;
   }
   .our-projects {
-    padding: 100px 0 130px;
+    padding-top: 100px;
+    padding-bottom: 130px;
   }
   .our-video {
-    padding: 70px 0 0;
-    max-height: 570px;
+    padding-top: 70px;
   }
   .subscribe {
-    padding: 165px 0 85px;
+    padding-top: 165px;
+    padding-bottom: 85px;
   }
   .footer {
-    padding: 70px 0 30px;
+    padding-top: 70px;
+    padding-bottom: 30px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) {
   iframe {
     width: 900px;
     height: 390px;
+  }
+  .our-video {
+    max-height: 570px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -438,5 +454,5 @@ meter {
 }
 
 .color-white {
-  color: #fff;
+  color: #FFF;
 }

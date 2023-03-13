@@ -38,11 +38,11 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: $our-grey;
+    color: $grey;
 
     &-welcome-screen {
         text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
-        margin: 0 0 14px;
+        margin-bottom: 14px;
     }
 
     &-card {
@@ -53,8 +53,8 @@
     &-mini-card {
         font-size: 26px;
         line-height: 43px;
-        margin: 0;
         color: $black;
+        margin: 0;
     }
 
     &-small {
@@ -64,7 +64,7 @@
 }
 
 .button {
-    background-color: $our-blue;
+    background-color: $blue;
     color: $white;
     padding: 13px 46px 15px;
     border-radius: 30px;
@@ -101,16 +101,18 @@
 }
 
 .welcome-screen-content {
-    padding: 100px 0 150px;
+    padding-top: 100px;
+    padding-bottom: 150px;
 }
 
 .mobile-app {
-    padding: 50px 0 45px;
+    padding-top: 50px;
+    padding-bottom: 45px;
 }
 
 .external-circle {
     border-radius: 50%;
-    border: $our-grey solid 1px;
+    border: $grey solid 1px;
     width: 110px;
     height: 110px;
     padding: 10px;
@@ -126,7 +128,7 @@
     background-size: 37px 40px;
     background-position: center center;
     border-radius: 50%;
-    border: $our-blue solid 1px;
+    border: $blue solid 1px;
     width: 90px;
     height: 90px;
     display: flex;
@@ -136,7 +138,8 @@
 
 .standards {
     background-color: $background-grey;
-    padding: 50px 0 35px;
+    padding-top: 50px;
+    padding-bottom: 35px;
 }
 
 .standards-img {
@@ -157,7 +160,8 @@
 }
 
 .our-works {
-    padding: 50px 0 35px;
+    padding-top: 50px;
+    padding-bottom: 35px;
     background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
 }
 
@@ -167,7 +171,7 @@
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 0 30px;
+    margin-bottom: 30px;
 }
 
 .our-works-img {
@@ -180,12 +184,13 @@
 
 .our-projects {
     background-color: $background-grey;
-    padding: 50px 0 60px;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 .our-projects-img {
-    width: 255px;
-    height: 255px;
+    max-width: 255px;
+    max-height: 255px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -193,7 +198,7 @@
 
 
 .our-video {
-    padding: 30px 0 0;
+    padding-top: 30px;
     background: url('../img/Rectangle.jpg') no-repeat;
     background-size: cover;
     max-height: 370px;
@@ -203,7 +208,8 @@
 
 
 .subscribe {
-    padding: 100px 0 45px;
+    padding-top: 100px;
+    padding-bottom: 45px;
 }
 
 .subscribe-form {
@@ -214,18 +220,19 @@
     padding: 13px 36px 15px;
     border-radius: 30px;
     width: 100%;
-    border: $our-grey solid 1px;
-    margin: 0 0 20px;
+    border: $grey solid 1px;
+    margin-bottom: 20px;
 }
 
 .footer {
     background-color: $background-grey;
-    padding: 30px 0 15px;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
 
 .footer-card-link {
-    color: $our-grey
+    color: $grey
 }
 
 .mail {
@@ -273,13 +280,13 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 52px;
-        color: #000;
+        color: $black;
 
         &-welcome-screen {
             font-size: 48px;
             font-weight: 800;
             line-height: 64px;
-            color: #FFF;
+            color: $white;
         }
 
         &-small {
@@ -293,10 +300,10 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 19.5px;
-        color: $our-grey;
+        color: $grey;
 
         &-welcome-screen {
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
             margin: 0 0 20px;
         }
 
@@ -309,7 +316,7 @@
             font-size: 36px;
             line-height: 53px;
             margin: 0;
-            color: #000;
+            color: $black;
         }
 
         &-small {
@@ -319,8 +326,8 @@
     }
 
     .button {
-        background-color: $our-blue;
-        color: #fff;
+        background-color: $blue;
+        color: $white;
         padding: 13px 46px 15px;
         border-radius: 30px;
     }
@@ -337,44 +344,55 @@
     }
 
     .welcome-screen-content {
-        padding: 220px 0 335px;
+        padding-top: 220px;
+        padding-bottom: 335px;
     }
 
     .mobile-app {
-        padding: 110px 0 105px;
+        padding-top: 110px;
+        padding-bottom: 105px;
     }
 
     .standards {
-        padding: 100px 0 70px;
+        padding-top: 100px;
+        padding-bottom: 70px;
     }
 
     .our-works {
-        padding: 100px 0 85px;
+        padding-top: 100px;
+        padding-bottom: 85px;
     }
 
     .our-projects {
-        padding: 100px 0 130px;
+        padding-top: 100px;
+        padding-bottom: 130px;
     }
 
     .our-video {
-        padding: 70px 0 0;
-        max-height: 570px;
+        padding-top: 70px;
     }
 
     .subscribe {
-        padding: 165px 0 85px;
+        padding-top: 165px;
+        padding-bottom: 85px;
     }
 
     .footer {
-        padding: 70px 0 30px;
+        padding-top: 70px;
+        padding-bottom: 30px;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+@media screen and (min-width: 992px) {
 
     iframe {
         width: 900px;
         height: 390px;
+    }
+
+    .our-video {
+        max-height: 570px;
     }
 }
 
@@ -383,13 +401,12 @@
         width: 970px;
         height: 430px;
     }
-
 }
 
 .color-blue {
-    color: #4985FF;
+    color: $blue;
 }
 
 .color-white {
-    color: #fff;
+    color: $white;
 }
