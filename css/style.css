@@ -109,7 +109,7 @@ meter {
   border: 0;
 }
 
-a:focus {
+.link:focus {
   outline: 1px solid #999999;
   border-radius: 5px;
 }
@@ -165,8 +165,16 @@ a:focus {
 .button {
   background-color: #4985FF;
   color: #FFF;
-  padding: 13px 46px 15px;
+  padding: 13px 20px 15px;
   border-radius: 30px;
+}
+
+div .color-blue {
+  color: #4985FF;
+}
+
+div .color-white {
+  color: #FFF;
 }
 
 .welcome-screen {
@@ -179,13 +187,11 @@ a:focus {
 }
 
 .welcome-screen-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 15px;
 }
 
 .mobile-app {
-  padding-top: 50px;
-  padding-bottom: 45px;
+  padding: 50px 15px 45px;
 }
 
 .external-circle {
@@ -215,8 +221,7 @@ a:focus {
 
 .standards {
   background-color: #F6F6F8;
-  padding-top: 50px;
-  padding-bottom: 35px;
+  padding: 50px 15px 35px;
 }
 
 .standards-img {
@@ -236,8 +241,7 @@ a:focus {
 }
 
 .our-works {
-  padding-top: 50px;
-  padding-bottom: 35px;
+  padding: 50px 15px 35px;
   background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
 }
 
@@ -258,8 +262,7 @@ a:focus {
 
 .our-projects {
   background-color: #F6F6F8;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding: 50px 15px 60px;
 }
 
 .our-projects-img {
@@ -295,8 +298,7 @@ a:focus {
 
 .footer {
   background-color: #F6F6F8;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding: 30px 15px 15px;
 }
 
 .footer-card-link {
@@ -421,7 +423,7 @@ a:focus {
   }
 }
 @media screen and (min-width: 992px) {
-  iframe {
+  .video-board {
     width: 900px;
     height: 390px;
   }
@@ -436,7 +438,7 @@ a:focus {
   }
 }
 @media screen and (min-width: 1200px) {
-  iframe {
+  .video-board {
     width: 970px;
     height: 430px;
   }
@@ -445,11 +447,4 @@ a:focus {
   .color-contrast {
     color: #FFF;
   }
-}
-.color-blue {
-  color: #4985FF;
-}
-
-.color-white {
-  color: #FFF;
 }
