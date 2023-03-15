@@ -1,0 +1,19 @@
+.our-works {
+    padding: 50px 15px 35px;
+    background: linear-gradient(180deg, #504DC2 50%, #FFF 50%);
+}
+
+
+.our-works-card {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.our-works-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

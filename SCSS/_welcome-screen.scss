@@ -1,0 +1,13 @@
+.welcome-screen {
+    background: url('../img/Rectangle.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+.header {
+    border-bottom: $background-grey solid 1px;
+}
+
+.welcome-screen-content {
+    padding: 100px 15px;
+}

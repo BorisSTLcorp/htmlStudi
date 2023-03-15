@@ -1,0 +1,45 @@
+.footer {
+    background-color: $background-grey;
+    padding: 30px 15px 15px;
+}
+
+
+.footer-card-link {
+    color: $grey
+}
+
+.mail {
+    & ::before {
+        content: url('../img/envelope.png');
+        width: 15px;
+        height: 13px;
+        padding: 5px 5px 0 0;
+    }
+}
+
+.phone {
+    & ::before {
+        content: url('../img/Group.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
+
+.address {
+    & ::before {
+        content: url('../img/placeholder.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}
+
+.footer-link {
+    & ::before {
+        content: url('../img/arrow.png');
+        width: 15px;
+        height: 13px;
+        padding: 0 5px 0 0;
+    }
+}

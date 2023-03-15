@@ -1,0 +1,141 @@
+@media screen and (min-width: 576px) {
+    .title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        color: $black;
+
+        &-welcome-screen {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 64px;
+            color: $white;
+        }
+
+        &-small {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.5px;
+        color: $grey;
+
+        &-welcome-screen {
+            text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
+            margin: 0 0 20px;
+        }
+
+        &-card {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &-mini-card {
+            font-size: 36px;
+            line-height: 53px;
+            margin: 0;
+            color: $black;
+        }
+
+        &-small {
+            font-size: 13px;
+            line-height: 21px;
+        }
+    }
+
+    .button {
+        background-color: $blue;
+        color: $white;
+        padding: 13px 46px 15px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .button-subscribe {
+        border-radius: 0 30px 30px 0;
+    }
+
+    .subscribe-input {
+        border-radius: 30px 0 0 30px;
+        margin: 0;
+    }
+
+    .welcome-screen-content {
+        padding-top: 220px;
+        padding-bottom: 335px;
+    }
+
+    .mobile-app {
+        padding-top: 110px;
+        padding-bottom: 105px;
+    }
+
+    .standards {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    .our-works {
+        padding-top: 100px;
+        padding-bottom: 85px;
+    }
+
+    .our-projects {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+
+    .our-video {
+        padding-top: 70px;
+    }
+
+    .subscribe {
+        padding-top: 165px;
+        padding-bottom: 85px;
+    }
+
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .video-board {
+        width: 900px;
+        height: 390px;
+    }
+
+    .our-video {
+        max-height: 570px;
+    }
+
+    .nav-item {
+        border-bottom: transparent solid 2px;
+
+        &:hover {
+            border-bottom: $white solid 2px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .video-board {
+        width: 970px;
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .color-contrast {
+        color: $white;
+    }
+}
