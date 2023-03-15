@@ -74,10 +74,10 @@
     border-radius: 30px;
 }
 
-div .color-blue {
-    color: $blue;
+.color-blue {
+    color: $blue !important;
 }
 
-div .color-white {
-    color: $white;
+.color-white {
+    color: $white !important;
 }
