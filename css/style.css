@@ -194,6 +194,36 @@ meter {
   padding: 100px 15px;
 }
 
+.navbar-toggler {
+  background-color: transparent;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+.navbar-toggler .icon {
+  width: 30px;
+  height: 30px;
+  background-image: repeating-linear-gradient(#000, transparent 30%);
+}
+
+.ifhidden {
+  display: none;
+}
+
+.nav-link {
+  color: #FFF;
+}
+.nav-link:hover {
+  color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .ifhidden {
+    display: block;
+  }
+}
 .mobile-app {
   padding: 50px 15px 45px;
 }
@@ -387,6 +417,12 @@ meter {
   }
 }
 @media screen and (min-width: 768px) {
+  .nav-item {
+    border-bottom: transparent solid 2px;
+  }
+  .nav-item:hover {
+    border-bottom: #FFF solid 2px;
+  }
   .button-subscribe {
     border-radius: 0 30px 30px 0;
   }
@@ -433,12 +469,6 @@ meter {
   }
   .our-video {
     max-height: 570px;
-  }
-  .nav-item {
-    border-bottom: transparent solid 2px;
-  }
-  .nav-item:hover {
-    border-bottom: #FFF solid 2px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -11,3 +11,41 @@
 .welcome-screen-content {
     padding: 100px 15px;
 }
+
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid $grey;
+    border-radius: 5px;
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        background-image: repeating-linear-gradient($black, transparent 30%);
+    }
+}
+
+
+
+.ifhidden {
+    display: none;
+}
+
+
+.nav-link {
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .ifhidden {
+        display: block;
+    }
+}
