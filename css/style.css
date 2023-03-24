@@ -202,10 +202,10 @@ meter {
 .navbar-toggler .icon {
   width: 30px;
   height: 30px;
-  background-image: repeating-linear-gradient(#000, transparent 30%);
+  background-image: repeating-linear-gradient(transparent, #000 10%, transparent 20%);
 }
 
-.ifhidden {
+.optional-menu {
   display: none;
 }
 
@@ -220,7 +220,7 @@ meter {
   .navbar-toggler {
     display: none;
   }
-  .ifhidden {
+  .optional-menu {
     display: block;
   }
 }
@@ -251,6 +251,14 @@ meter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.see-more-hidden {
+  display: none;
+}
+
+.see-more-view {
+  display: flex;
 }
 
 .standards {
@@ -294,6 +302,15 @@ meter {
      object-fit: cover;
 }
 
+.see-more-hidden {
+  display: none;
+}
+
+.see-more-view {
+  display: flex;
+  justify-content: center;
+}
+
 .our-projects {
   background-color: #F6F6F8;
   padding: 50px 15px 60px;
@@ -304,6 +321,14 @@ meter {
   max-height: 255px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.see-more-hidden {
+  display: none;
+}
+
+.see-more-view {
+  display: flex;
 }
 
 .our-video {
@@ -475,10 +500,5 @@ meter {
   .video-board {
     width: 970px;
     height: 430px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .color-contrast {
-    color: #FFF;
   }
 }

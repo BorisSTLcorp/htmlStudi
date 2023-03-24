@@ -21,13 +21,13 @@
     .icon {
         width: 30px;
         height: 30px;
-        background-image: repeating-linear-gradient($black, transparent 30%);
+        background-image: repeating-linear-gradient(transparent, $black 10%, transparent 20%);
     }
 }
 
 
 
-.ifhidden {
+.optional-menu {
     display: none;
 }
 
@@ -40,12 +40,13 @@
     }
 }
 
+
 @media screen and (min-width: 768px) {
     .navbar-toggler {
         display: none;
     }
 
-    .ifhidden {
+    .optional-menu {
         display: block;
     }
 }
