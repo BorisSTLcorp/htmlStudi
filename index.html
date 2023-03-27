@@ -20,7 +20,7 @@
         <header class="header">
             <div class="container">
                 <nav class="d-flex flex-column align-items-center flex-md-row justify-content-md-end pr-0 pb-lg-0">
-                    <button class="navbar-toggler align-self-end mt-3 mb-3" type="button">
+                    <button onclick="togglerNav(navbar)" class="navbar-toggler align-self-end mt-3 mb-3" type="button">
                         <div class="icon"></div>
                     </button>
                     <div class="nav-list optional-menu justify-content-end">
@@ -62,7 +62,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-10 col-md-6 d-flex justify-content-center">
-                    <button class="button" onclick="location.href='#our-projects'">Наши проекты</button>
+                    <button class="button" onclick="buttonLink()">Наши проекты</button>
                 </div>
             </div>
         </div>
@@ -180,7 +180,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button mobile-button mt-3 mt-sm-4">Все услуги</button>
+            <button onclick="toggler(mobileCard)" class="button mt-3 mt-sm-4">Все услуги</button>
         </div>
     </section>
     <section class="standards">
@@ -259,7 +259,7 @@
                     </h2>
                 </div>
                 <div class="col-12 col-xl-6 d-flex justify-content-xl-end justify-content-center align-items-center">
-                    <button class="button our-works-button" id="buttonWorks">Все услуги</button>
+                    <button onclick="toggler(ourWorksMore)" class="button" id="buttonWorks">Все услуги</button>
                 </div>
             </div>
             <div class="row pt-5 pb-xl-5 d-flex justify-content-center">
@@ -436,7 +436,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <button class="button projects-button">Все проекты</button>
+                <button onclick="toggler(projectsMore)" class="button">Все проекты</button>
             </div>
         </div>
     </section>
@@ -559,7 +559,9 @@
             </div>
         </div>
     </footer>
-    <script src="./JS/script.js">
+    <script src="./JS/toggler.js">
+    </script>
+    <script src="./JS/buttonLink.js">
     </script>
 </body>
 

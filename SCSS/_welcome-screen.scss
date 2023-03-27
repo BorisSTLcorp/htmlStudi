@@ -3,7 +3,6 @@
     background-size: cover;
 }
 
-
 .header {
     border-bottom: $background-grey solid 1px;
 }
@@ -11,7 +10,6 @@
 .welcome-screen-content {
     padding: 100px 15px;
 }
-
 
 .navbar-toggler {
     background-color: transparent;
@@ -25,13 +23,6 @@
     }
 }
 
-
-
-.optional-menu {
-    display: none;
-}
-
-
 .nav-link {
     color: $white;
 
@@ -40,6 +31,9 @@
     }
 }
 
+.optional-menu {
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     .navbar-toggler {

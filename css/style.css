@@ -181,6 +181,14 @@ meter {
   color: #FFF !important;
 }
 
+.see-more-hidden {
+  display: none;
+}
+
+.see-more-view {
+  display: flex;
+}
+
 .welcome-screen {
   background: url("../img/Rectangle.jpg") no-repeat;
   background-size: cover;
@@ -205,15 +213,15 @@ meter {
   background-image: repeating-linear-gradient(transparent, #000 10%, transparent 20%);
 }
 
-.optional-menu {
-  display: none;
-}
-
 .nav-link {
   color: #FFF;
 }
 .nav-link:hover {
   color: #FFF;
+}
+
+.optional-menu {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -251,14 +259,6 @@ meter {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.see-more-hidden {
-  display: none;
-}
-
-.see-more-view {
-  display: flex;
 }
 
 .standards {
@@ -302,12 +302,7 @@ meter {
      object-fit: cover;
 }
 
-.see-more-hidden {
-  display: none;
-}
-
 .see-more-view {
-  display: flex;
   justify-content: center;
 }
 
@@ -321,14 +316,6 @@ meter {
   max-height: 255px;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.see-more-hidden {
-  display: none;
-}
-
-.see-more-view {
-  display: flex;
 }
 
 .our-video {
