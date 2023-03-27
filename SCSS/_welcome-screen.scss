@@ -3,11 +3,44 @@
     background-size: cover;
 }
 
-
 .header {
     border-bottom: $background-grey solid 1px;
 }
 
 .welcome-screen-content {
     padding: 100px 15px;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid $grey;
+    border-radius: 5px;
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        background-image: repeating-linear-gradient(transparent, $black 10%, transparent 20%);
+    }
+}
+
+.nav-link {
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.optional-menu {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .optional-menu {
+        display: block;
+    }
 }

@@ -19,26 +19,25 @@
     <section class="welcome-screen" id="welcome-screen">
         <header class="header">
             <div class="container">
-                <nav class="navbar navbar-expand-md navbar-dark justify-content-end pr-0 pb-lg-0">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <nav class="d-flex flex-column align-items-center flex-md-row justify-content-md-end pr-0 pb-lg-0">
+                    <button onclick="togglerNav(navbar)" class="navbar-toggler align-self-end mt-3 mb-3" type="button">
+                        <div class="icon"></div>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav pt-4  text-center">
-                            <li class="nav-item active pl-3 pr-3 mb-2 mr-0 mb-lg-0 pb-lg-4">
+                    <div class="nav-list optional-menu justify-content-end">
+                        <ul class=" pt-4 mb-0 text-center d-md-flex">
+                            <li class="nav-item pl-2 pr-2 mb-2 mb-md-0 mr-0 mb-lg-0 pb-md-4">
                                 <a class="nav-link link" href="#">Главная</a>
                             </li>
-                            <li class="nav-item active pl-3 pr-3 mb-2 mr-0 mb-lg-0 pb-lg-4">
+                            <li class="nav-item pl-2 pr-2 mb-2 mb-md-0 mr-0 mb-lg-0 pb-md-4">
                                 <a class="nav-link link" href="#our-projects">Наши проекты</a>
                             </li>
-                            <li class="nav-item active pl-3 pr-3 mb-2 mr-0 mb-lg-0 pb-lg-4">
+                            <li class="nav-item pl-2 pr-2 mb-2 mb-md-0 mr-0 mb-lg-0 pb-md-4">
                                 <a class="nav-link link" href="#mobile-app">Услуги</a>
                             </li>
-                            <li class="nav-item active pl-3 pr-3 mb-2 mr-0 mb-lg-0 pb-lg-4">
+                            <li class="nav-item pl-2 pr-2 mb-2 mb-md-0 mr-0 mb-lg-0 pb-md-4">
                                 <a class="nav-link link" href="#our-video">Новости</a>
                             </li>
-                            <li class="nav-item active pl-3 pr-3 mb-2 mr-0 mb-lg-0 pb-lg-4">
+                            <li class="nav-item pl-2 pr-2 mb-2 mb-md-0 mr-0 mb-lg-0 pb-md-4">
                                 <a class="nav-link link pl-0 pr-0" href="#footer">Контакты</a>
                             </li>
                         </ul>
@@ -63,7 +62,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-10 col-md-6 d-flex justify-content-center">
-                    <button class="button">Наши проекты</button>
+                    <button class="button" onclick="buttonLink()">Наши проекты</button>
                 </div>
             </div>
         </div>
@@ -87,7 +86,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row mb-3 mb-sm-4">
+            <div class="row">
                 <div class="col-12 col-lg-4 text-left d-flex">
                     <div class="mr-3">
                         <div class="external-circle">
@@ -134,7 +133,54 @@
                     </div>
                 </div>
             </div>
-            <button class="button">Все услуги</button>
+            <div class="row mobile-cards see-more-hidden">
+                <div class="col-12 col-lg-4 text-left d-flex">
+                    <div class="mr-3">
+                        <div class="external-circle">
+                            <div class="inner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="pt-5 pr-xl-3 mb-3">
+                        <h3 class="title-small">
+                            Создание сайтов
+                        </h3>
+                        <p class="text text-card">
+                            Lorem Ipsum - это текст- "рыба", часто используется в печати и вэб-дизайне.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-left d-flex">
+                    <div class="mr-3">
+                        <div class="external-circle">
+                            <div class="inner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="pt-5 pr-xl-3 mb-3">
+                        <h3 class="title-small">
+                            Создание сайтов
+                        </h3>
+                        <p class="text text-card">
+                            Lorem Ipsum - это текст- "рыба", часто используется в печати и вэб-дизайне.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-left d-flex">
+                    <div class="mr-3">
+                        <div class="external-circle">
+                            <div class="inner-circle"></div>
+                        </div>
+                    </div>
+                    <div class="pt-5 pr-xl-3 mb-3">
+                        <h3 class="title-small">
+                            Создание сайтов
+                        </h3>
+                        <p class="text text-card">
+                            Lorem Ipsum - это текст- "рыба", часто используется в печати и вэб-дизайне.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button onclick="toggler(mobileCard)" class="button mt-3 mt-sm-4">Все услуги</button>
         </div>
     </section>
     <section class="standards">
@@ -213,7 +259,7 @@
                     </h2>
                 </div>
                 <div class="col-12 col-xl-6 d-flex justify-content-xl-end justify-content-center align-items-center">
-                    <button class="button">Все услуги</button>
+                    <button onclick="toggler(ourWorksMore)" class="button" id="buttonWorks">Все услуги</button>
                 </div>
             </div>
             <div class="row pt-5 pb-xl-5 d-flex justify-content-center">
@@ -269,6 +315,62 @@
                     </a>
                 </div>
             </div>
+            <div class="row pt-5 pb-xl-5 see-more-hidden our-works-more">
+                <div
+                    class="col-12 pb-5 col-md-8 d-flex flex-column align-items-center text-center col-xl-4 pb-xl-0 align-items-xl-start text-xl-left">
+                    <div class="our-works-card">
+                        <img class="our-works-img" src="./img/Rectangle.jpg"
+                            alt="настоящие специалисты своего дела творят it шедевры">
+                    </div>
+                    <h3 class="title title-small mb-4 color-contrast">
+                        <span class="color-blue">01. </span>Исследование и упаковка
+                    </h3>
+                    <p class="text mb-4 color-contrast">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                        является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                    <a class="color-contrast link" href="#">
+                        Подробнее
+                    </a>
+                </div>
+                <div
+                    class="col-12 pb-5 col-md-8 d-flex flex-column align-items-center text-center col-xl-4 pb-xl-0 align-items-xl-start text-xl-left">
+                    <div class="our-works-card">
+                        <img class="our-works-img" src="./img/Rectangle.jpg"
+                            alt="настоящие специалисты своего дела творят it шедевры">
+                    </div>
+                    <h3 class="title title-small mb-4">
+                        <span class="color-blue">01. </span>Исследование и упаковка
+                    </h3>
+                    <p class="text mb-4">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                        является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                    <a class="link" href="#">
+                        Подробнее
+                    </a>
+                </div>
+                <div
+                    class="col-12 pb-3 col-md-8 pb-xl-5 d-flex flex-column align-items-center text-center col-xl-4 pb-xl-0 align-items-xl-start text-xl-left">
+                    <div class="our-works-card">
+                        <img class="our-works-img" src="./img/Rectangle.jpg"
+                            alt="настоящие специалисты своего дела творят it шедевры">
+                    </div>
+                    <h3 class="title title-small mb-4">
+                        <span class="color-blue">01. </span>Исследование и упаковка
+                    </h3>
+                    <p class="text mb-4">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                        является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                    <a class="link" href="#">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
             <hr>
         </div>
     </section>
@@ -289,7 +391,29 @@
                     </p>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center align-items-center mb-5">
+                    <div class="our-projects-img">
+                        <img src="img/code.jpg" alt="экран с изображением строчек кода">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center align-items-center mb-5">
+                    <div class="our-projects-img">
+                        <img src="img/code.jpg" alt="экран с изображением строчек кода">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center align-items-center mb-5">
+                    <div class="our-projects-img">
+                        <img src="img/code.jpg" alt="экран с изображением строчек кода">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center align-items-center mb-5">
+                    <div class="our-projects-img">
+                        <img src="img/code.jpg" alt="экран с изображением строчек кода">
+                    </div>
+                </div>
+            </div>
+            <div class="row projects-more see-more-hidden">
                 <div class="col-12 col-sm-6 col-xl-3 d-flex justify-content-center align-items-center mb-5">
                     <div class="our-projects-img">
                         <img src="img/code.jpg" alt="экран с изображением строчек кода">
@@ -312,7 +436,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <button class="button">Все проекты</button>
+                <button onclick="toggler(projectsMore)" class="button">Все проекты</button>
             </div>
         </div>
     </section>
@@ -435,15 +559,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="./JS/toggler.js">
+    </script>
+    <script src="./JS/buttonLink.js">
+    </script>
 </body>
 
 </html>
